@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    
+    <link
+    rel="icon"
+    type="image/jpg"
+    sizes="32x32"
+    href="./images/favicon/favico-05.png"
+  />
+  <link
+    rel="icon"
+    type="image/jpg"
+    sizes="16x16"
+    href="./images/favicon/favico-05.png"
+  />
+
+  <title lang="en-GB">Iryna Deutsch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;500;600;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- swiper -->
+  <!-- <link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/> -->
+
+  <!-- <link rel="stylesheet" href="./sass/index.scss" /> -->
+
+  
+  <script  src="./js/form/form.js" ></script>
+
+  <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+ (function(){
+    emailjs.init("TrJTbmc10B3_hM92e");
+ })();
+</script>
+</head>
+</head>
+<body>
+
+    <!-- <include src="./partials/header.html"> <h3>3</h3></include> -->
+    <!-- <a class="site-nav__link" href="./partials/header.html">1</a> -->
+
+    <!-- header -->
+
+    <section class="page-header">
+        <div class="container">
+          <nav class="nav">
+            <a class="logo" href="#">
+              <img class="logo-header" src="images/header/Logo-01.png" alt="Назва логотипу, Ірина - німецька мова." />
+              <!-- <img class="logo-img" src="images/header/Logo-02.png" alt="image" /> -->
+              <!-- <h1 class="header__text" lang="en-GB">German learn</h1> -->
+            </a>
+      
+            <!-- menu -->
+            <button
+              class="menu-button"
+              type="button "
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg width="40" height="40" aria-label="Mobile menu switch">
+                <use
+                  class="icon-cross"
+                  href="images/sprite/mobilemenu/sprite.svg#cross"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="images/sprite/mobilemenu/sprite.svg#menu"
+                ></use>
+              </svg>
+            </button>
+      
+            <div class="menu-container" id="menu-container" data-menu>
+              <nav class="nav-menu">
+                <a href="#home" class="nav-link">Головна</a>
+                <a href="#about" class="nav-link">Про себе</a>
+                <a href="#contact" class="nav-link">Контакти</a>
+                <a href="./deutsch.html" class="nav-link">
+                  <select class=" nav-link__button" name="lang" id="leng-select">
+                    
+                        <option class="nav-link__button_style" value="ua" selected>Укр</option>                
+                   
+                        <option class="nav-link__button_style"  value="du">
+                            <!-- <a href="./deutsch.html"> -->
+                                Du
+                            <!-- </a> -->
+                        </option>
+                   
+                    
+                    
+                  </select>
+                </a>
+                <a href="#sing-up" class="nav-link sign-up">Приєднатися</a>
+              </nav>
+            </div>
+          </nav>
+        </div>
+      
+        <!--  -->
+      </section>
+
+      <!-- main -->
+      
+    <!-- <main> -->
+        <!-- hero -->
+
+        <section class="page-hero" id="home">
+            <!-- video -->
+            <div class="container-hero">
+              <div class="home">
+                <div class="fullScreen">
+                  <div class="fullScreen_body">
+                    <div class="fullScreen_title">
+                      Вивчай німецьку легко
+                      
+                    </div>
+                   
+                  </div>
+                  <video
+                    
+                    autoPlay
+                    muted
+                    loop
+                    preload="auto"
+                    class="fullScreen_video"
+                  >
+                     <!-- <source src="images/video/flag.webm" type="video/webm" />  -->
+                    <source src="images/video/flag.mp4" type="video/mp4" />
+                  </video>
+                </div>
+            
+                
+            </div>
+            </section>
+            
+
+        <!-- features -->
+
+        <section class="page-features container-features" >
+            <div class="container">
+              <div class="wrapper">
+                <div>
+          
+                  <h2 class="features-heading">
+                    ЧОМУ ВАРТО ОБРАТИ ЗАНЯТТЯ ЗІ МНОЮ?
+                  </h2>
+          
+                  <ul class="features-grid">
+                    <li class="paragraf-grid__one">
+                      <div class="features-text">
+                       
+          
+                        <p class="features-paragraph">15 РОКІВ ДОСВІДУ.</p>
+          
+                        <p class="features-paragraph">Більше 50 СТУДЕНТІВ.</p>
+            
+                        <p class="features-paragraph">
+                          Всі студенти успішно здали іспити на сертифікат рівня від А1 до
+                          В2.
+                        </p>
+          
+                        <p class="features-paragraph">
+                          Під час навчання я використовую сучасні матеріали.
+                        </p>
+                        <p class="features-paragraph">
+                          Навчаю німецької мови за комунікативною методикою і вже на
+                          першому занятті Ви почнете говорити!
+                        </p>
+          
+                       
+                      </div>
+                    </li>
+                    <li class="image-grid__one">
+                      <img
+                        class="features-img "
+                        src="images/features/features-03.1.png"
+                        alt="На робочому столі розміщені словники та журнали з німецької мови"
+                      />
+                    </li>
+                    
+                    <li class="paragraf-grid__two">
+                     
+                      <p class="features-paragraph">
+                        У групах від 2 до 9 осіб, я встигаю приділити час кожному
+                        студенту.
+                      </p>
+                      <p class="features-paragraph">
+                        У мене Ви можете підготуватися до іспитів Start Deutsch, Test
+                        DaF, а також на <span lang="de">Goethe-Zertifikat</span> будь-якого рівня.
+                      </p>
+                      <p class="features-paragraph ">
+                        Німецька мова для роботи вашої мрії, подорожей та життя за
+                        кордоном.
+                      </p>
+                    </li>
+          
+                    <li class="image-grid__two">
+                      <img
+                        class="features-img "
+                        src="images/features/features-08.png"
+                        alt="Прапор Німеччини з написом посередині, (форма навчання - онлайн)."
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- test -->
+
+        <section class="page-test container-test" id="test">
+            <div class="container">
+              <div class="wrapper-test">
+                <h2 class="test__heading">ПІДГОТОВКА ДО ІСПИТІВ</h2>
+                <ul class="test-grid">
+                  <li>
+                    <div class="overlay-box ">
+                      <img
+                        class="test-img"
+                        src="images/test/test-a1.png"
+                        alt="Сертифікат Ґете-Інститута рівня А1"
+                      />
+          
+                      <div class="overlay-box__hidden ">
+                        <p class="overlay-box__text">
+                          Підготовка до здачі на сертифiкат А1 - В2.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="overlay-box ">
+                      <img
+                      class="test-img"
+                      src="images/test/test-b2.png"
+                      alt="Сертифікат Ґете-Інститута рівня В2"
+                    />
+          
+                    <div class="overlay-box__hidden overlay">
+                      <p class="overlay-box__text">
+                        Поглиблене вивчення мови, залежно від початкового рівня.
+                      </p>
+                    </div>
+          
+                    </div>
+                   
+                  </li>
+                  <li>
+                    <div class="overlay-box ">
+                      <img
+                      class="test-img"
+                      src="images/test/test-3.2.png"
+                      alt="Логотип Ґете-Інститута"
+                    />
+          
+                    <div class="overlay-box__hidden overlay">
+                      <p class="overlay-box__text">
+                        Вивчення мови з використанням оригинальних, сучасних підручників.
+                      </p>
+                    </div>
+                    </div>
+                    
+                  </li>
+                  <li>
+                    <div class="overlay-box ">
+                      <img
+                      class="test-img"
+                      src="images/test/test-5.2.png"
+                      alt="Сертифікат Ґете-Інститута"
+                    />
+          
+                    <div class="overlay-box__hidden overlay">
+                      <p class="overlay-box__text">
+                        Всі бажаючі гарантовано отримують знання!
+                      </p>
+                    </div>
+                    </div>
+                   
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- about -->
+
+        <section class="page-about container-about" id="about">
+            <div class="container">
+              <div class="wrapper">
+                <div>
+                  <h2 class="about-heading">ПРО СЕБЕ</h2>
+          
+                  <ul class="about-grid">
+                    <li>
+                      <img class="about-img" src="images/about/about-03.png" alt="Дівчина посміхаючись сидить на лаві" />
+                    </li>
+          
+                    <li>
+                      
+                      <div class="wrapper-paragraf">
+                        <p class="about-paragraph">Диплом</p>
+                        <p class="about-paragraph">Сертифікат</p>
+                        <p class="about-paragraph">
+                          Подобається навчати та бачити, як люди не бояться змінювати себе
+                          та світ навколо себе.
+                        </p>
+          
+                        <p class="about-paragraph">
+                          Мої студенти підтвердження того, що мова відкриває безліч
+                          можливостей та шляхів для розвитку та досягнення своєї мети.
+                        </p>
+                      </div>
+                    </li>
+          
+                    <li>
+                      <img
+                        class="about-img"
+                        src="images/about/sertificat-03.png"
+                        alt="Оригінальний сертифікат Ґете-Інститута"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- form -->
+
+        <section class="page-form container-form" id="sing-up">
+            <div class="container">
+              <div class="wrapper-form">
+                <h2 class="title-form">Приєднатися до навчання</h2>
+               
+              </div>
+          
+              <!-- form-block -->
+          
+              <form class="form">
+                <div class="form__size">
+                  <label for="name" class="label">Ім'я</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    
+                    type="text"
+                    placeholder="Введіть своє ім'я"
+                    
+                  />
+                 
+                </div>
+          
+                <div class="form__size">
+                  <label for="email" class="label">Пошта</label>
+                  <input
+                    class="form-control"
+                    id="email"
+                    
+                    type="email"
+                    placeholder="email@gmail.com"
+                  
+                  />
+                  
+                </div>
+                <div class="form__size">
+                  <label for="message" class="label">Зворотній зв'язок</label>
+                  <textarea
+                    class="form-control"
+                    
+                    id="message"
+                    
+                    placeholder="Введіть своє повідомлення тут..."
+                  ></textarea>
+                </div>
+               
+                <!-- <button  class="btn btn-primary" onclick="alert('Hello')">Відправити</button> -->
+                <button type="submit" class="btn btn-primary" onclick="sendMail()">Відправити</button>
+              </form>
+            </div>
+          </section>
+          
+
+
+    <!-- </main> -->
+    <!--footer  -->
+
+
+    <section class="page-footer container-footer" id="contact">
+        <div class="container">
+          <div class="footer-grid">
+            <a class="logo" href="#">
+              <img
+                class="logo-footer__img"
+                src="images/logo-1.png"
+                alt="Серце в кольорах Німеччини."
+              />
+            </a>
+      
+            <div class="footer-wrapper">
+              <div class="col-12 text-center">
+                <h3 class="title-footer">Слідуй за нами</h3>
+                <ul class="som-list d-flex mx-auto justify-content-center flex-wrap">
+                  <li class="som-item">
+                    <a
+                      href="viber://chat?number=+380987991041"
+                      target="_blank"
+                      aria-label="Вайбер"
+                    >
+                      <img
+                        src="images/footer/viber-01.png"
+                        alt="Логотип соціальної мережі - Вайбер"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </li>
+      
+                  <li class="som-item">
+                    <a
+                      href="https://t.me/IrynaShevchenkoDeutsch"
+                      target="_blank"
+                      aria-label="Телеграм"
+                    >
+                      <img
+                        src="images/footer/telegram-01.png"
+                        alt="Логотип соціальної мережі - Телеграм"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </li>
+      
+                  <li class="som-item">
+                    <a
+                      href="https://www.linkedin.com/in/iryna-shevchenko-457095104/"
+                      target="_blank"
+                      aria-label="ЛінкедІн"
+                    >
+                      <img
+                        src="images/footer/linkedin-01.png"
+                        alt="Логотип соціальної мережі - ЛінкедІн"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </li>
+      
+                  <li class="som-item">
+                    <a
+                      href="mailto:irynashevchenko2015@gmail.com"
+                      target="_blank"
+                      aria-label="Пошта"
+                    >
+                      <img
+                        src="images/footer/email-01.png"
+                        alt="Логотип eмблеми - Пошта"
+                        width="40"
+                        height="40"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <h2 class="text-footer">
+              Copyright © German learn 2022. Created by 
+              <span>
+                <a 
+                class="text-footer__style-color"
+                href="https://www.linkedin.com/in/serhii-shevchenko-9889a3244/" 
+                target="_blank"> Serhii Shevchenko.</a> 
+              </span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      
+      <script defer src="./js/menu/menu.js" type="module"></script>
+</body>
+</html>

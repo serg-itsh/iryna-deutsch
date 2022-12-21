@@ -1,0 +1,128 @@
+.page-test {
+  background: #fff;
+  padding: 30px 0 70px;
+  box-shadow: inset 0px 39px 50px -47px #000000;
+}
+
+.test-grid {
+  grid-row-gap: 40px;
+  display: grid;
+}
+
+.test__heading {
+  color: #000;
+  margin-bottom: 35px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.paragraph__test {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.test-img {
+  width: 500px;
+}
+
+//  ==== overlay ==========
+
+.overlay-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bdbdbd;
+  box-shadow: 8px 14px 20px 0px #0000004f;
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+.overlay-box:hover .overlay-box__hidden {
+  transform: translatex(0);
+}
+
+.overlay-box__hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #71498ce6;
+
+  transform: translateY(100%);
+  transition: transform 500ms ease;
+}
+
+.overlay-box__text {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 55px 52px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+// ============= 768 =============
+
+@media screen and (min-width: 768px) {
+  .test__heading{
+    font-size: 22px;
+    font-weight: 200;
+  }
+
+
+  .test-grid {
+    grid-row-gap: 60px;
+    grid-column-gap: 80px;
+    text-align: left;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .overlay-box__text {
+    padding: 75px;
+  }
+}
+
+// ============= 1280 =============
+
+@media screen and (min-width: 1280px) {
+  .page-test {
+    padding: 40px 0 70px;
+    box-shadow: inset 0 39px 50px -47px #000;
+  }
+
+  .test__heading {
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 200;
+  }
+
+  .container-test {
+    width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(6px);
+    background: #fbfbfbc4;
+
+    border-bottom: 1px solid #00000059;
+  }
+
+  .test-grid {
+    grid-row-gap: 70px;
+    grid-column-gap: 140px;
+    text-align: left;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .overlay-box__text {
+    padding: 101px;
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 1.15;
+  }
+}
