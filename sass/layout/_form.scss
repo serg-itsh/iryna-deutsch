@@ -60,8 +60,56 @@
   box-shadow: 8px 14px 20px #0000004f;
 
   outline: none;
+  border: 1px solid #fff;
  
 }
+
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(114, 114, 114);
+    font-size: 14px;
+    font-weight: 100;
+}
+
+//============== form valid================
+
+// .form-control:placeholder-shown {
+//   border-color: #ffa000;
+// }
+
+// .form-control:not(:placeholder-shown) {
+//   border-color: #2196f3;
+// }
+
+.form:focus-within {
+  border-color: #2196f3;
+}
+
+.label:focus-within {
+  color: #2196f3;
+}
+
+
+.form-control:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
+}
+
+.form-control:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
+}
+
+textarea:not(:placeholder-shown):required:valid {
+  background-color: #e8f0fe;
+}
+
+textarea:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
+}
+
+
+
+// ============== form valid================
 
 .form-text {
   color: #000000;

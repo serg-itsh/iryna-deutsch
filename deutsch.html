@@ -55,6 +55,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 </script>
 <script type="text/javascript">
  (function(){
+ 
     emailjs.init("TrJTbmc10B3_hM92e");
  })();
 </script>
@@ -364,7 +365,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
           
               <!-- form-block -->
           
-              <form class="form">
+              <form action="#" class="form">
                 <div class="form__size">
                   <label for="name" class="label">Name</label>
                   <input
@@ -373,7 +374,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
                     
                     type="text"
                     placeholder="Gib deinen Namen ein"
-                    
+                    minlength="2"
+                    required
                   />
                  
                 </div>
@@ -386,7 +388,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
                     
                     type="email"
                     placeholder="email@gmail.com"
-                  
+                    required
                   />
                   
                 </div>
@@ -398,11 +400,13 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
                     id="message"
                     
                     placeholder="Geben Sie hier Ihre Nachricht ein..."
+                    required
                   ></textarea>
                 </div>
                
                 <!-- <button  class="btn btn-primary" onclick="alert('Hello')">Відправити</button> -->
-                <button type="submit" class="btn btn-primary" onclick="sendMail()">Schicken</button>
+                <!-- <button type="submit" class="btn btn-primary" onclick="sendMail()">Schicken</button> -->
+                <button type="submit" class="btn btn-primary" id="submit"  value="Submit">Відправити</button>
               </form>
             </div>
           </section>
