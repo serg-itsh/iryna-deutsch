@@ -1,1 +1,1 @@
-document.querySelector('select').onchange = function() {window.location = this.value}
+// document.querySelector('select').onchange = function() {window.location = this.value}
